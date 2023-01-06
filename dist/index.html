@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌧️ Weather App 🌧️ </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="weather.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-7  bg-emerald-400  text-yellow-300" >
+    <h1 class=" mt-6 mb-4 text-3xl md:text-4xl font-bold font-sans    text-center  " ><i  class="fa inline fa-cloud" style="font-size:24px"></i> The Weather App <i class="fa fa-cloud inline" style="font-size:24px"></i></h1>
+    <h3 class="capitalize text-2xl md:text-3xl  font-sans font-semibold    text-center " > search for the required city </h3>
+    <input id="inp" class="py-5 ml-7 md:w-[400px] md:mt-8  sm:ml-[50%] md:ml-[35%]  rounded-md " type="text">
+    <button  id="btnn" class=" h-15 bg-yellow-400 hover:bg-yellow-500 text-white p-4 mt-7 rounded-xl font-sans " > Get Weather </button>
+    <div class="text-center">
+        <h3 class="text-center"id="nameOfCity" >  </h3>
+        <span class=" text-2xl font-sans" id="deg" >  </span>
+        <img class="ml-4 inline" id="icon" alt="">
+        <span class=" block text-2xl font-sans" id="desc" >  </span>
+        <span class="block text-2xl font-sans" id="humidity" >  </span>
+        <span class="block text-2xl font-sans" id="wind" >  </span>
+    </div>
+    <h3 class="text-center text-3xl mt-6 captalize">Weather for other common places</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 text-center">
+        <div id="kolkata" class="mx-[10%]   md:w-auto   mt-[0%] mb-[5%] rounded-2xl p-5   md:p-8 md:h-auto h-[300px] border-[2px] border-yellow-300" >
+         <h2 class="font-bold text-2xl" >Kolkata</h2>
+         <span id="kolkataDeg" ></span>
+         <img  id="kolkataImg" class=" inline " src="" alt="">  
+         <span class=" block text-2xl font-sans" id="kdesc" >  </span>
+        <span class="block text-2xl font-sans" id="khumidity" >  </span>
+        <span class="block text-2xl font-sans" id="kwind" >  </span>   
+        </div>
+        <div id="lucknow" class="mx-[10%]   md:w-auto   mt-[0%] mb-[5%] rounded-2xl p-5   md:p-8 md:h-auto h-[300px] border-[2px] border-yellow-300 " >
+             <h2 class="font-bold text-2xl" >Lucknow</h2>
+             <span id="lucknowDeg" ></span>
+             <img id="lucknowImg" class= "inline " src="" alt="">
+             <span class=" block text-2xl font-sans" id="ldesc" >  </span>
+        <span class="block text-2xl font-sans" id="lhumidity" >  </span>
+        <span class="block text-2xl font-sans" id="lwind" >  </span>  
+        </div>
+        <div id="punjab" class="mx-[10%]   md:w-auto   mt-[0%] mb-[5%] rounded-2xl p-5   md:p-8 md:h-auto h-[300px] border-[2px] border-yellow-300  " >
+             <h2 class="font-bold text-2xl" >Punjab</h2>
+             <span  id="punjabDeg" ></span>
+             <img id="punjabImg" class=" inline " src="" alt="">
+             <span class=" block text-2xl font-sans" id="pdesc" >  </span>
+            <span class="block text-2xl font-sans" id="phumidity" >  </span>
+            <span class="block text-2xl font-sans" id="pwind" >  </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
