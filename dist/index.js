@@ -81,3 +81,12 @@ btnn.addEventListener("click", (e) => {
       .then((res) => res.json())
       .then((ress) => handleResponse(ress));
   });
+  btnn.addEventListener("keydown", (e) => {
+    if(e.code == "Enter"){
+        fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${inp.value}&appid=7e9758edbc3147dd03aff112e6631cea&units=metric`
+          )
+            .then((res) => res.json())
+            .then((ress) => handleResponse(ress));
+    }
+  });
